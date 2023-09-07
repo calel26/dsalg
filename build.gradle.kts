@@ -1,5 +1,10 @@
 plugins {
     id("java")
+    id("application")
+}
+
+application {
+    mainClass.set("com.lawsmat.Main")
 }
 
 group = "com.lawsmat"
