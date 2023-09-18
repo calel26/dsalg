@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/LinList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/LinList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" afterDir="false" />
-    </list>
+    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +161,7 @@
       <workItem from="1694885788493" duration="218000" />
       <workItem from="1694886015357" duration="106000" />
       <workItem from="1694973171904" duration="3630000" />
-      <workItem from="1695046362656" duration="1729000" />
+      <workItem from="1695046362656" duration="2054000" />
     </task>
     <servers />
   </component>

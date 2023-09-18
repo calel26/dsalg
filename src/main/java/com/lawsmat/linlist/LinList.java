@@ -28,23 +28,26 @@ public class LinList<E> {
      */
     public void add(int index, E data) {
         Node<E> d = new Node<>(data); // put it in a node
-        // find the node before the one that needs to be added
         Node<E> next = head;
-        if(head == null) {
-            head = d;
+        if(head == null) { // is the list empty
+            head = d; // new head and tail
             tail = d;
-        } else if(index == 0) {
-            d.setNext(head);
+        } else if(index == 0) { // are we adding to the beginning?
+            d.setNext(head); // new head
             head = d;
         } else {
+            // find the node before the one that needs to be added
             for (int i = 1; i < index; i++) {
                 next = next.next();
             }
-            // get the current node at index
+            // get the node after the target
             Node<E> after = next.next();
-            // new node -> current index node
+            if(after == null) {// gotta change the tail
+                tail = d;
+            }
+            // new node points to -> current index node
             d.setNext(after);
-            // node before index -> new node
+            // node before index points to -> new node
             next.setNext(d);
         }
         size++;
@@ -93,14 +96,17 @@ public class LinList<E> {
             throw new ArrayIndexOutOfBoundsException("index " + idx + " is out of bounds for linlist of size " + size);
         }
         Node<E> previous = null;
-        for(int i = 1; i < idx - 1; i++) {
+        for(int i = 1; i < idx - 1; i++) { // loop until we're at the node before the target
             previous = previous != null ? previous.next() : head;
         }
         Node<E> original;
-        if(previous != null) {
-            original = previous.next();
+        if(previous != null) { // are we removing the head?
+            original = previous.next(); // no, so use the previous variable
             previous.setNext(original.next());
-        } else {
+            if(original.next() == null) { // did we remove the tail?
+                tail = previous;
+            }
+        } else { // if yes, then set the head to the former head's next
             original = head;
             head = head.next();
         }
