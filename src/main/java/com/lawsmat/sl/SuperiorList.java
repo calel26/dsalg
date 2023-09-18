@@ -1,14 +1,25 @@
-package com.lawsmat;
+package com.lawsmat.sl;
 
 @SuppressWarnings("unchecked")
 public class SuperiorList<E> {
     private E[] array;
+    private int size = 0;
 
     public SuperiorList() {
-        this.array = (E[]) new Object[0];
+        this(0);
+    }
+
+    public SuperiorList(int capacity) {
+        this.array = (E[]) new Object[capacity];
     }
 
     public void add(int index, E elem) {
+        if(index > size) {
+            throw new ArrayIndexOutOfBoundsException("Index " + index + " does not exist in this array of length " + array.length);
+        }
+        if(size >= array.length) {
+            grow();
+        }
         // make a new array to store the old data + new element
         E[] newArray = (E[]) new Object[array.length + 1];
         for(int i = 0; i < index; i++) {
@@ -19,6 +30,15 @@ public class SuperiorList<E> {
             newArray[i] = array[i-1]; // copy the rest of the array
         }
         array = newArray; // swap in the new array
+        size++;
+    }
+
+    public void grow() {
+        E[] temp = (E[]) new Object[array.length + 2];
+        for(int i = 0; i < array.length; i++) {
+            temp[i] = array[i];
+        }
+        array = temp;
     }
 
     public void add(E elem) {
@@ -39,16 +59,23 @@ public class SuperiorList<E> {
         }
         E elem = array[index];
         array = newArray; // swap in the new array
+        size--;
         return elem;
     }
 
     public E set(int i, E val) {
+        if(i > size) {
+            throw new ArrayIndexOutOfBoundsException(i);
+        }
         E old = array[i];
         array[i] = val;
         return old;
     }
 
     public E get(int i) {
+        if(i > size) {
+            throw new ArrayIndexOutOfBoundsException(i);
+        }
         return array[i];
     }
 
