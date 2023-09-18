@@ -33,6 +33,9 @@ public class LinList<E> {
         if(head == null) {
             head = d;
             tail = d;
+        } else if(index == 0) {
+            d.setNext(head);
+            head = d;
         } else {
             for (int i = 1; i < index; i++) {
                 next = next.next();

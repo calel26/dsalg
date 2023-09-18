@@ -93,13 +93,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.lawsmat.linlist.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rstudent.Main" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lawsmat.rstudent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lawsmat.linlist.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.linlist.Main" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.linlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lawsmat.linlist.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.thestructures [run]" />
       </list>
