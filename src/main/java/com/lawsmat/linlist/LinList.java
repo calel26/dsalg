@@ -34,7 +34,7 @@ public class LinList<E> {
             head = d;
             tail = d;
         } else {
-            for (int i = 1; i < index - 1; i++) {
+            for (int i = 1; i < index; i++) {
                 next = next.next();
             }
             // get the current node at index
@@ -73,9 +73,10 @@ public class LinList<E> {
             throw new ArrayIndexOutOfBoundsException(idx + " is out of bounds for linlist of size " + size);
         }
         Node<E> next = head;
-        for(int i = 1; i < idx; i++) {
+        for(int i = 0; i < idx; i++) {
             next = next.next();
         }
+        assert next != null;
         return next.get();
     }
 

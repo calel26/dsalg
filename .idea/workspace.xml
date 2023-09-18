@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/LinList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/sl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/SuperiorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/sl/SuperiorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/LinList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/linlist/LinList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +89,24 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.rstudent.Main" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.rstudent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="thestructures [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -123,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.thestructures [run]" />
       </list>
     </recent_temporary>
@@ -143,7 +152,8 @@
       <workItem from="1694885610671" duration="117000" />
       <workItem from="1694885788493" duration="218000" />
       <workItem from="1694886015357" duration="106000" />
-      <workItem from="1694973171904" duration="2737000" />
+      <workItem from="1694973171904" duration="3630000" />
+      <workItem from="1695046362656" duration="1729000" />
     </task>
     <servers />
   </component>
