@@ -4,8 +4,8 @@ plugins {
 }
 
 application {
-    mainClass.set("com.lawsmat.rstudent.Main")
+    mainClass.set("com.lawsmat.q.Main")
 }
 
 group = "com.lawsmat"
-version = "1.2"
+version = "1.3"
