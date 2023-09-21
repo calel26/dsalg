@@ -30,7 +30,11 @@ public class RandomStudent {
     }
 
     public void add(String name) {
-        nameList.add(name);
+        if(!nameList.contains(name)) {
+            nameList.add(name);
+        } else {
+            System.out.println("Already in list");
+        }
     }
 
     public boolean isEmpty() {
