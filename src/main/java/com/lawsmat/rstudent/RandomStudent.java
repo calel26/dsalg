@@ -6,9 +6,13 @@ import java.util.Random;
 
 public class RandomStudent {
     private static final String[] names = {
-            "a",
-            "b",
-            "c"
+            "Lawson",
+            "Kate",
+            "Dawson",
+            "Avery",
+            "Saige",
+            "Luke",
+            "David"
     };
 
     private final Random random = new Random();

@@ -95,4 +95,8 @@ public class SuperiorList<E> {
         }
         return s.append("]").toString();
     }
+
+    public E[] getArray() {
+        return array;
+    }
 }

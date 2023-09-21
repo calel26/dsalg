@@ -29,6 +29,7 @@ public class Main {
                 case "a" -> {
                     System.out.print("Type the name to add or `_` to cancel -> ");
                     String name = s.nextLine().trim();
+                    if(name.equals("_")) continue;
                     r.add(name);
                     System.out.println("Added " + name + " to the class");
                 }

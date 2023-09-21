@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/q/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/q/Q.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.lawsmat.q.Main">
+  <component name="RunManager" selected="Gradle.thestructures [run]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rstudent.Main" />
       <module name="thestructures.main" />
@@ -182,7 +179,8 @@
       <workItem from="1694973171904" duration="3630000" />
       <workItem from="1695046362656" duration="2761000" />
       <workItem from="1695145888025" duration="159000" />
-      <workItem from="1695146615396" duration="744000" />
+      <workItem from="1695146615396" duration="2255000" />
+      <workItem from="1695309097788" duration="263000" />
     </task>
     <servers />
   </component>
