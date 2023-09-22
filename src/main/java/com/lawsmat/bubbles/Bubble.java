@@ -21,7 +21,7 @@ public class Bubble {
     private int y;
     private int aX;
     private int aY;
-    private final Color color;
+    private Color color;
 
     public Bubble(int cx, int cy) {
         color = colors[random.nextInt(colors.length)];
@@ -29,16 +29,22 @@ public class Bubble {
         sY = random.nextInt(20, 100);
         x = cx - (sX / 2);
         y = cy - (sY / 2);
-        aX = random.nextInt(-3, 4);
-        aY = random.nextInt(-3, 4);
+        aX = random.nextInt(-3, 7);
+        aY = random.nextInt(-3, 7);
+        if(aX == 0 || aY == 0) {
+            ++aX;
+            ++aY;
+        }
     }
 
     public void tick(Dimension d) {
         if(x < 0 || x + sX > d.width) {
-            aX = -aX;
+            aX = Math.abs(aX) * (x < 0 ? 1 : -1);
+            color = colors[random.nextInt(colors.length)];
         }
         if(y < 0 || y + sY > d.height) {
-            aY = -aY;
+            aY = Math.abs(aY) * (y < 0 ? 1 : -1);
+            color = colors[random.nextInt(colors.length)];
         }
         x += aX;
         y += aY;

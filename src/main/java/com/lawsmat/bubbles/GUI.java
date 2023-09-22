@@ -21,9 +21,9 @@ public class GUI {
 
     public GUI() {
         frame = new JFrame("bubbles");
-        frame.setSize(800, 800);
+        frame.setSize(1000, 600);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(frame.getSize());
+//        frame.setPreferredSize(frame.getSize()); caused the bottom part of the screen to not show
         frame.add(new BubblePainter(frame.getSize()));
         frame.pack();
         frame.setVisible(true);

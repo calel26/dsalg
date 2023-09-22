@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rstudent/RandomStudent.java" afterDir="false" />
-    </list>
+    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,13 +87,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.lawsmat.bubbles.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rstudent.Main" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lawsmat.rstudent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lawsmat.bubbles.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.bubbles.Main" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.bubbles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,6 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lawsmat.bubbles.Main" />
         <item itemvalue="Gradle.thestructures [run]" />
         <item itemvalue="Application.com.lawsmat.q.Main" />
         <item itemvalue="Application.com.lawsmat.linlist.Main" />
@@ -182,6 +193,7 @@
       <workItem from="1695145888025" duration="159000" />
       <workItem from="1695146615396" duration="2255000" />
       <workItem from="1695309097788" duration="800000" />
+      <workItem from="1695310288110" duration="2606000" />
     </task>
     <servers />
   </component>
