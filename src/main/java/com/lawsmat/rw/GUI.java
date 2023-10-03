@@ -131,16 +131,22 @@ public class GUI {
                     nName="";
                 }
 
+                ArrayList<String> names = rw.read();
                 if(key==37) {
-                    ArrayList<String> names = rw.read();
-                    idx = Math.max(0, idx - 1);
-                    nName = names.get(idx);
+                    idx--;
                 } else if(key==39) {
-                    ArrayList<String> names = rw.read();
                     System.out.println(names.size());
-                    idx = Math.min(names.size() - 1, idx + 1);
-                    nName = names.get(idx);
+                    idx++;
                 }
+
+                if(idx < 0) {
+                    idx = names.size() - 1;
+                } else if (idx >= names.size()) {
+                    idx = 0;
+                }
+
+                if(key==37||key==39)
+                    nName = names.get(idx);
 
                 System.out.println("i" + idx);
 
