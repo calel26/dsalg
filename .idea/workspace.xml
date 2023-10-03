@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/ReadWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/word/Cursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/word/Letter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/word/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/word/Word.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/word/WordProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.GUI">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rw.GUI" />
       <module name="thestructures.main" />
@@ -212,6 +204,7 @@
       <workItem from="1695910766843" duration="4044000" />
       <workItem from="1696009900069" duration="3519000" />
       <workItem from="1696295293565" duration="1310000" />
+      <workItem from="1696347134155" duration="429000" />
     </task>
     <servers />
   </component>

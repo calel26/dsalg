@@ -133,12 +133,12 @@ public class GUI {
 
                 if(key==37) {
                     ArrayList<String> names = rw.read();
-                    idx = Math.max(0, idx--);
+                    idx = Math.max(0, idx - 1);
                     nName = names.get(idx);
                 } else if(key==39) {
                     ArrayList<String> names = rw.read();
                     System.out.println(names.size());
-                    idx = Math.min(names.size() - 1, idx++);
+                    idx = Math.min(names.size() - 1, idx + 1);
                     nName = names.get(idx);
                 }
 
