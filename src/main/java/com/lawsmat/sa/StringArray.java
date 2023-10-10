@@ -9,11 +9,16 @@ public class StringArray {
         array = initialString;
     }
 
-    private void serialize(String[] d) {
-        array = "";
-        for(String n : d) {
-            array += n;
+    private void serialize(Object[] d) {
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i < d.length; i++) {
+            if(d[i] == null) { continue; }
+            String n = d[i].toString();
+            builder.append(n);
+            if(i != d.length - 1)
+                builder.append(",");
         }
+        array = builder.toString();
     }
 
     private String[] deserialize() {
@@ -22,27 +27,19 @@ public class StringArray {
 
     public void push(String elem) {
         if(!array.isEmpty()) {
-            elem += ",";
+            elem = "," + elem;
         }
         array += elem;
     }
 
     public void add(int idx, String elem) {
-        SuperiorList<String> s = new SuperiorList<>();
-        String[] now = deserialize();
-        for(String st : now) {
-            s.add(st);
-        }
+        SuperiorList<String> s = new SuperiorList<>(deserialize());
         s.add(idx, elem);
         serialize(s.getArray());
     }
 
     public void remove(int idx) {
-        SuperiorList<String> s = new SuperiorList<>();
-        String[] now = deserialize();
-        for(String st : now) {
-            s.add(st);
-        }
+        SuperiorList<String> s = new SuperiorList<>(deserialize());
         s.remove(idx);
         serialize(s.getArray());
     }
@@ -55,5 +52,13 @@ public class StringArray {
         String[] s = deserialize();
         s[idx] = elem;
         serialize(s);
+    }
+
+    public String toString() {
+        return array;
+    }
+
+    public int size() {
+        return deserialize().length;
     }
 }

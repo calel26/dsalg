@@ -1,5 +1,7 @@
 package com.lawsmat.sl;
 
+import java.util.ArrayList;
+
 @SuppressWarnings("unchecked")
 public class SuperiorList<E> {
     private E[] array;
@@ -7,6 +9,11 @@ public class SuperiorList<E> {
 
     public SuperiorList() {
         this(0);
+    }
+
+    public SuperiorList(E[] arr) {
+        array = arr;
+        size = arr.length;
     }
 
     public SuperiorList(int capacity) {
@@ -96,7 +103,7 @@ public class SuperiorList<E> {
         return s.append("]").toString();
     }
 
-    public E[] getArray() {
+    public Object[] getArray() {
         return array;
     }
 }

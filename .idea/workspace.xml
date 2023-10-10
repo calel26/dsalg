@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/rw/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Bs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/BsNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/sa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/sa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/sa/StringArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/sa/StringArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/sl/SuperiorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/sl/SuperiorList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +96,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.GUI">
+  <component name="RunManager" selected="Application.com.lawsmat.baloneysearch.Main">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rw.GUI" />
       <module name="thestructures.main" />
@@ -117,12 +123,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.lawsmat.bubbles.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.bubbles.Main" />
+    <configuration name="com.lawsmat.baloneysearch.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.Main" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.bubbles.*" />
+          <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lawsmat.sa.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.sa.Main" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.sa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,35 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="thestructures [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lawsmat.sa.Main" />
+        <item itemvalue="Application.com.lawsmat.baloneysearch.Main" />
         <item itemvalue="Application.GUI" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.lawsmat.stak.Main" />
-        <item itemvalue="Application.com.lawsmat.bubbles.Main" />
-        <item itemvalue="Gradle.thestructures [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +201,9 @@
       <workItem from="1695910766843" duration="4044000" />
       <workItem from="1696009900069" duration="3519000" />
       <workItem from="1696295293565" duration="1310000" />
-      <workItem from="1696347134155" duration="429000" />
+      <workItem from="1696347134155" duration="2736000" />
+      <workItem from="1696469419737" duration="4860000" />
+      <workItem from="1696957271397" duration="1083000" />
     </task>
     <servers />
   </component>
