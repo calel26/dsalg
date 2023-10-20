@@ -7,6 +7,10 @@ public class Bs<E extends Comparable<E>> {
         this.root = new BsNode<>(root);
     }
 
+    public Bs(BsNode<E> root) {
+        this.root = root;
+    }
+
     public void print() {
         print("R", root, 0);
     }
@@ -85,5 +89,9 @@ public class Bs<E extends Comparable<E>> {
             return search;
         }
         return min(search.getLeft());
+    }
+
+    public BsNode<E> getRoot() {
+        return root;
     }
 }

@@ -1,6 +1,6 @@
 package com.lawsmat.baloneysearch;
 
-public class BsNode<V> {
+public class BsNode<V extends Comparable<V>> implements Comparable<BsNode<V>> {
     private V value;
     private BsNode<V> left, right;
 
@@ -35,5 +35,10 @@ public class BsNode<V> {
 
     public String toString() {
         return get().toString();
+    }
+
+    @Override
+    public int compareTo(BsNode<V> o) {
+        return this.value.compareTo(o.value);
     }
 }

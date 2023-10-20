@@ -20,8 +20,6 @@ public class InsertionChallenge {
             tree.insert(arr[middle]);
             insert(tree, arr, middle + 1, end);
             insert(tree, arr, start, middle - 1);
-        } /* else if(start == end) {
-            tree.insert(arr[start]);
-        } */
+        }
     }
 }

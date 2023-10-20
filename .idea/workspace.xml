@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Bs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Bs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/BsNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/BsNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.InsertionChallenge">
+  <component name="RunManager" selected="Application.com.lawsmat.huff.Main">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.rw.GUI" />
       <module name="thestructures.main" />
@@ -118,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.word.Main" />
+    <configuration name="com.lawsmat.baloneysearch.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.Main" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.word.*" />
+          <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.lawsmat.baloneysearch.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.Main" />
+    <configuration name="com.lawsmat.huff.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.Main" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
+          <option name="PATTERN" value="com.lawsmat.huff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lawsmat.huff.Main" />
         <item itemvalue="Application.InsertionChallenge" />
         <item itemvalue="Application.com.lawsmat.sa.Main" />
         <item itemvalue="Application.com.lawsmat.baloneysearch.Main" />
         <item itemvalue="Application.GUI" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -199,23 +202,16 @@
       <workItem from="1696347134155" duration="2736000" />
       <workItem from="1696469419737" duration="4860000" />
       <workItem from="1696957271397" duration="1715000" />
-      <workItem from="1697119992255" duration="2153000" />
+      <workItem from="1697119992255" duration="5817000" />
+      <workItem from="1697329396532" duration="45000" />
+      <workItem from="1697558388928" duration="1762000" />
+      <workItem from="1697717887092" duration="4116000" />
+      <workItem from="1697821296686" duration="1682000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
