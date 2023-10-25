@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/huffman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Bs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/Bs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/BsNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/BsNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/baloneysearch/InsertionChallenge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +81,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/calel26/IdeaProjects/thestructures/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -94,20 +94,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.lawsmat.huff.Main">
-    <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.rw.GUI" />
-      <module name="thestructures.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lawsmat.rw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.lawsmat.huff.GUI">
     <configuration name="InsertionChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.InsertionChallenge" />
       <module name="thestructures.main" />
@@ -127,6 +119,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lawsmat.huff.GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.GUI" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.huff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.lawsmat.huff.GUI" />
         <item itemvalue="Application.com.lawsmat.huff.Main" />
         <item itemvalue="Application.InsertionChallenge" />
         <item itemvalue="Application.com.lawsmat.sa.Main" />
         <item itemvalue="Application.com.lawsmat.baloneysearch.Main" />
-        <item itemvalue="Application.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +211,10 @@
       <workItem from="1697329396532" duration="45000" />
       <workItem from="1697558388928" duration="1762000" />
       <workItem from="1697717887092" duration="4116000" />
-      <workItem from="1697821296686" duration="1682000" />
+      <workItem from="1697821296686" duration="2573000" />
+      <workItem from="1698156211443" duration="3694000" />
+      <workItem from="1698159990534" duration="898000" />
+      <workItem from="1698256718777" duration="299000" />
     </task>
     <servers />
   </component>
