@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +216,7 @@
       <workItem from="1698159990534" duration="898000" />
       <workItem from="1698256718777" duration="3424000" />
       <workItem from="1698348688783" duration="653000" />
-      <workItem from="1698680010956" duration="2273000" />
+      <workItem from="1698680010956" duration="2611000" />
     </task>
     <servers />
   </component>

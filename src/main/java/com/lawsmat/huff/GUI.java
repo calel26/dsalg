@@ -37,7 +37,7 @@ public class GUI {
         Rectangle button1 = new Rectangle(50, 50, 100, 50);
         Rectangle button2 = new Rectangle(50, 120, 100, 50);
         Rectangle button3 = new Rectangle(50, 190, 130, 50);
-        Image myImage;
+        java.awt.Image myImage;
         String nName = "";
         int prev = 0;
 
