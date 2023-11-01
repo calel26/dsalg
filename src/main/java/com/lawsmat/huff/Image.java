@@ -54,9 +54,10 @@ public class Image {
     public static class InnerBoard extends JPanel implements Runnable, MouseListener  {
         private Thread animator;
         Dimension d;
-        private String encodedImage = "000000111111111100000000000011111111111111111100000001100110011010100111110000000000110100110101010011111010100000011010011001101010100111110101000000110101010100111101111011110111100000000101010101010000000000011110101111010111100000011111101011110101111110011111111010010010010111111111010110100111001001001110010111010101010010010010010010010101010:y-2:b-7:c-9:d-18:w-33:g-37:r-38";
-        private int height = 12;
-        private int width = 12;
+        private final static String encodedImage = "000000111111111100000000000011111111111111111100000001100110011010100111110000000000110100110101010011111010100000011010011001101010100111110101000000110101010100111101111011110111100000000101010101010000000000011110101111010111100000011111101011110101111110011111111010010010010111111111010110100111001001001110010111010101010010010010010010010101010:y-2:b-7:c-9:d-18:w-33:g-37:r-38";
+        private final static int height = 12;
+        private final static int width = 12;
+        private Color brush = colors.get("w");
         private Color[] image = new Color[width * height];
 
         public final static HashMap<String, Color> colors;
@@ -67,7 +68,7 @@ public class Image {
                 w = white
                 r = red
                 b = black
-                c= brown
+                c = brown
                 g = gold
                 d = blue
                 y = yellow
@@ -123,6 +124,59 @@ public class Image {
             System.out.println("done");
         }
 
+        private void encode() {
+            HashMap<String, Integer> freq = new HashMap<>();
+            HashMap<Color, String> colStr = new HashMap<>();
+
+            for(Map.Entry<String, Color> e : colors.entrySet()) {
+                colStr.put(e.getValue(), e.getKey());
+            }
+
+            for(int i = 0; i < image.length; i++) {
+                Color col = image[i];
+                String c = colStr.get(col);
+                if(freq.containsKey(c)) {
+                    freq.put(c, freq.get(c) + 1);
+                } else {
+                    freq.put(c, 1);
+                }
+            }
+            System.out.println(freq);
+            PriorityQueue<BsNode<PixelFreq>> q = new PriorityQueue<>();
+            for(Map.Entry<String, Integer> e : freq.entrySet()) {
+                q.add(new BsNode<>(new PixelFreq(e.getKey(), e.getValue())));
+            }
+            while(q.size() > 1) {
+                BsNode<PixelFreq> l = q.remove();
+                BsNode<PixelFreq> r = q.remove();
+
+                BsNode<PixelFreq> parent = new BsNode<>(new PixelFreq(
+                        null,
+                        l.get().freq() + r.get().freq()
+                ));
+                parent.setLeft(l);
+                parent.setRight(r);
+                q.add(parent);
+            }
+            Bs<PixelFreq> tree = new Bs<>(q.remove());
+            HashMap<String, String> res = new HashMap<>();
+            outputHuffman(res, tree.getRoot(), "");
+            HashMap<String, String> results = new HashMap<>();
+            for(Map.Entry<String, String> e : res.entrySet()) {
+                results.put(e.getValue(), e.getKey());
+            }
+            System.out.println(results);
+            StringBuilder result = new StringBuilder();
+            for(int i = 0; i < image.length; i++) {
+                Color c = image[i];
+                result.append(results.get(colStr.get(c)));
+            }
+            for(Map.Entry<String, Integer> f : freq.entrySet()) {
+                result.append(":").append(f.getKey()).append("-").append(f.getValue());
+            }
+            System.out.println(result);
+        }
+
         public InnerBoard (Dimension dimension) {
             setSize(dimension);
             setPreferredSize(dimension);
@@ -154,7 +208,13 @@ public class Image {
             }
         }
 
-        public void mousePressed(MouseEvent e) {}
+        public void mousePressed(MouseEvent e) {
+            int img_x = (e.getX() - 250) / 20;
+            int img_y = (e.getY() - 250) / 20;
+            if(img_x < 0 || img_x > width || img_y < 0 || img_y > height) return;
+
+            image[(img_y*height)+img_x] = brush;
+        }
 
         public void mouseReleased(MouseEvent e) {}
 
@@ -174,10 +234,20 @@ public class Image {
                 int key = e.getKeyCode();
                 // String c = KeyEvent.getKeyText(e.getKeyCode());
                 //  c = Character.toString((char) key);
-
-
-
-
+                if(key == 10) {
+                    encode();
+                }
+                if(e.getKeyChar() == KeyEvent.VK_ENTER) {
+                    for(int x = 0; x < width; x++) {
+                        for(int y = 0; y < height; y++) {
+                            image[(x*width)+y] = brush;
+                        }
+                    }
+                }
+                Color newC = colors.get("" + e.getKeyChar());
+                if(newC != null) {
+                    brush = newC;
+                }
             }
         }//end of adapter
 
