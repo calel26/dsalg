@@ -54,7 +54,8 @@ public class Image {
     public static class InnerBoard extends JPanel implements Runnable, MouseListener  {
         private Thread animator;
         Dimension d;
-        private final static String encodedImage = "000000111111111100000000000011111111111111111100000001100110011010100111110000000000110100110101010011111010100000011010011001101010100111110101000000110101010100111101111011110111100000000101010101010000000000011110101111010111100000011111101011110101111110011111111010010010010111111111010110100111001001001110010111010101010010010010010010010101010:y-2:b-7:c-9:d-18:w-33:g-37:r-38";
+//         private final static String encodedImage = "000000111111111100000000000011111111111111111100000001100110011010100111110000000000110100110101010011111010100000011010011001101010100111110101000000110101010100111101111011110111100000000101010101010000000000011110101111010111100000011111101011110101111110011111111010010010010111111111010110100111001001001110010111010101010010010010010010010101010:y-2:b-7:c-9:d-18:w-33:g-37:r-38";
+        private final static String encodedImage = "001100110011111111111001100111111111111001111111110001111100011110000000001110000000001010111111111101010101111111100000100101001000011111101010011001101011111110101010101011111111010101011111111010101010101111111010101010101111:b-2:d-90:g-8:w-10:y-34";
         private final static int height = 12;
         private final static int width = 12;
         private Color brush = colors.get("w");
@@ -116,6 +117,7 @@ public class Image {
             for(int i = 0; i < binCode.length(); i++) {
                 current += binCode.charAt(i);
                 if(revmap.containsKey(current)) {
+                    if(pix >= image.length) break;
                     image[pix] = colors.get(revmap.get(current));
                     pix++;
                     current = "";
@@ -199,6 +201,9 @@ public class Image {
             g2.setColor(Color.black);
             g2.fillRect(0, 0,(int)d.getWidth() , (int)d.getHeight());
 
+            g2.setColor(Color.WHITE);
+            g2.fillRect(245, 245, 20*width+10, 20*height+10);
+
             for(int x = 0; x < width; x++) {
                 for(int y = 0; y < height; y++) {
                     Color pixel = image[(y*height) + x];
@@ -234,7 +239,7 @@ public class Image {
                 int key = e.getKeyCode();
                 // String c = KeyEvent.getKeyText(e.getKeyCode());
                 //  c = Character.toString((char) key);
-                if(key == 10) {
+                if(e.getKeyChar() == KeyEvent.VK_SPACE) {
                     encode();
                 }
                 if(e.getKeyChar() == KeyEvent.VK_ENTER) {

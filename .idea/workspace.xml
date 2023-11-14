@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/Hashinator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Image.java" afterDir="false" />
     </list>
@@ -88,7 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -102,13 +105,18 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Image">
-    <configuration name="Image" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.Image" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="format" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HashRunner">
+    <configuration name="HashRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.hash.HashRunner" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.huff.*" />
+          <option name="PATTERN" value="com.lawsmat.hash.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.InsertionChallenge" />
+    <configuration name="Image" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.Image" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
+          <option name="PATTERN" value="com.lawsmat.huff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashRunner" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Image" />
         <item itemvalue="Application.com.lawsmat.huff.GUI" />
         <item itemvalue="Application.com.lawsmat.huff.Main" />
-        <item itemvalue="Application.InsertionChallenge" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +228,13 @@
       <workItem from="1698256718777" duration="3424000" />
       <workItem from="1698348688783" duration="653000" />
       <workItem from="1698680010956" duration="3110000" />
-      <workItem from="1698842183569" duration="1929000" />
+      <workItem from="1698842183569" duration="3743000" />
+      <workItem from="1698944467966" duration="2087000" />
+      <workItem from="1698947233237" duration="27000" />
+      <workItem from="1698947271373" duration="17000" />
+      <workItem from="1699283297011" duration="696000" />
+      <workItem from="1699383812699" duration="637000" />
+      <workItem from="1699968841240" duration="2461000" />
     </task>
     <servers />
   </component>
