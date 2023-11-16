@@ -17,5 +17,6 @@ public class HashRunner {
         ht.add(new HashNode<>("GE", 70));
         System.out.println("GE = " + ht.find("GE"));
         System.out.println("the hashinator = " + ht);
+        System.out.println("represented as " + ht.debugInfo());
     }
 }

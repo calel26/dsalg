@@ -1,8 +1,6 @@
 package com.lawsmat.hash;
 
-import com.lawsmat.linlist.LinList;
-
-public class HashNode<K, V> {
+public class HashNode<K, V> implements Comparable<HashNode<K, V>> {
     private final K key;
     private V value;
 
@@ -21,5 +19,18 @@ public class HashNode<K, V> {
 
     public void setValue(V value) {
         this.value = value;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getKey())
+                .append(" = ")
+                .append(getValue());
+        return sb.toString();
+    }
+
+    @Override
+    public int compareTo(HashNode<K, V> o) {
+        return (int)((double)o.value - (double)this.value);
     }
 }

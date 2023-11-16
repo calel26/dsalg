@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/Hashinator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/wordle/OptimalWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/wordle/Words.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/huff/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/HashRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/Hashinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/hash/Hashinator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,7 @@
       <command value="format" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HashRunner">
+  <component name="RunManager" selected="Application.OptimalWords">
     <configuration name="HashRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.hash.HashRunner" />
       <module name="thestructures.main" />
@@ -150,6 +151,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OptimalWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.wordle.OptimalWords" />
+      <module name="thestructures.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawsmat.wordle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.lawsmat.huff.GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.GUI" />
       <module name="thestructures.main" />
@@ -163,26 +177,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.lawsmat.huff.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.Main" />
-      <module name="thestructures.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lawsmat.huff.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OptimalWords" />
         <item itemvalue="Application.HashRunner" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Image" />
         <item itemvalue="Application.com.lawsmat.huff.GUI" />
-        <item itemvalue="Application.com.lawsmat.huff.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -235,6 +236,8 @@
       <workItem from="1699283297011" duration="696000" />
       <workItem from="1699383812699" duration="637000" />
       <workItem from="1699968841240" duration="2461000" />
+      <workItem from="1699971494018" duration="63000" />
+      <workItem from="1700072196065" duration="3129000" />
     </task>
     <servers />
   </component>

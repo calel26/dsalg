@@ -1,6 +1,7 @@
 package com.lawsmat.hash;
 
 // not using linlist because the java one can be iterated over more efficiently
+import java.util.Arrays;
 import java.util.LinkedList;
 
 @SuppressWarnings("unchecked")
@@ -20,6 +21,8 @@ public class Hashinator<K, V> {
             // for(char c : skey.chars()) { sum += (int)c }
             int sum = skey.chars().sum();
             return sum % arr.length;
+        } else if(key instanceof Character c) {
+            return (int)c % arr.length;
         } else {
             // we can't do it so cheat
             return key.hashCode();
@@ -76,6 +79,18 @@ public class Hashinator<K, V> {
             }
         }
         s.append("}");
+        return s.toString();
+    }
+
+    public String debugInfo() {
+        StringBuilder s = new StringBuilder();
+        for(int i = 0; i < arr.length; i++) {
+            s.append(i);
+            s.append("=");
+            s.append(arr[i]);
+            if(i != arr.length - 1)
+                s.append(", ");
+        }
         return s.toString();
     }
 }
