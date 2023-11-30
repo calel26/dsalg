@@ -6,16 +6,18 @@ import com.lawsmat.hash.Hashinator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
+import java.util.function.Predicate;
 
 public class OptimalWords {
     private final static Hashinator<Character, Double> freqs;
     private final PriorityQueue<HashNode<String, Double>> q;
+    private Predicate<String> additionalRequirements = null;
 
     String[] w = new String[5];
 
     public static void main(String[] args) {
         var ow = new OptimalWords(Words.getWords().length);
-        ow.calculateFreqs();
+        ow.calculateFreqs(true);
         System.out.println(Arrays.toString(ow.getOptimalWords()));
     }
 
@@ -32,19 +34,29 @@ public class OptimalWords {
         q = new PriorityQueue<>(n);
     }
 
-    public void calculateFreqs() {
+    public OptimalWords(int n, Predicate<String> additionalRequirements) {
+        this(n);
+        this.additionalRequirements = additionalRequirements;
+    }
+
+    public void calculateFreqs(boolean checkDupes) {
         final String[] words = Words.getWords();
         for (String word : words) {
-            ArrayList<Character> found = new ArrayList<>();
             double f = 0.0;
+            ArrayList<Character> found = new ArrayList<>(word.length());
             for (char c : word.toCharArray()) {
-                if (found.contains(c)) {
+                if (found.contains(c) && checkDupes) {
                     f = 0.0; // duplicate char
                     break;
                 } else {
                     f += freqs.find(c);
                 }
                 found.add(c);
+            }
+            if(additionalRequirements != null) {
+                if(!additionalRequirements.test(word)) {
+                    f = 0.0; // did not meet requirements
+                }
             }
             q.add(new HashNode<>(word, f));
         }
