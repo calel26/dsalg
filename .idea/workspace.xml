@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/wordle/WordleBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/wordle/OptimalWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/wordle/OptimalWords.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +236,7 @@
       <workItem from="1700233214077" duration="3343000" />
       <workItem from="1700506822965" duration="3781000" />
       <workItem from="1701189058269" duration="2888000" />
-      <workItem from="1701350414654" duration="2175000" />
+      <workItem from="1701350414654" duration="3333000" />
     </task>
     <servers />
   </component>

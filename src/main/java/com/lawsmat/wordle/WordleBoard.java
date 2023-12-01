@@ -57,7 +57,7 @@ public class WordleBoard {
                 if(!word.contains(""+ch)) return false;
             }
             for(char ch : not) {
-                if(word.contains(""+ch)) return false;
+                if(word.contains(""+ch) && !needed.contains(ch)) return false;
             }
 
             return true;
