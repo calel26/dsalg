@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/cgraph/CGRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/cgraph/CGWRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/cgraph/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/cgraph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/cgraph/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/graph/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/graph/GRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/graph/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,32 +79,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/calel26/IdeaProjects/thestructures/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/calel26/IdeaProjects/thestructures/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -106,13 +115,13 @@
       <command value="format" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordleBoard">
-    <configuration name="HashRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.hash.HashRunner" />
+  <component name="RunManager" selected="Application.CGWRunner">
+    <configuration name="CGRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.cgraph.CGRunner" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.hash.*" />
+          <option name="PATTERN" value="com.lawsmat.cgraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Image" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.huff.Image" />
+    <configuration name="CGWRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.cgraph.CGWRunner" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.huff.*" />
+          <option name="PATTERN" value="com.lawsmat.cgraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawsmat.baloneysearch.Main" />
+    <configuration name="GRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawsmat.graph.GRunner" />
       <module name="thestructures.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawsmat.baloneysearch.*" />
+          <option name="PATTERN" value="com.lawsmat.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CGWRunner" />
+        <item itemvalue="Application.CGRunner" />
+        <item itemvalue="Application.GRunner" />
         <item itemvalue="Application.WordleBoard" />
         <item itemvalue="Application.OptimalWords" />
-        <item itemvalue="Application.HashRunner" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Image" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +246,11 @@
       <workItem from="1700506822965" duration="3781000" />
       <workItem from="1701189058269" duration="2888000" />
       <workItem from="1701350414654" duration="3333000" />
+      <workItem from="1701454913566" duration="1424000" />
+      <workItem from="1701787560744" duration="1558000" />
+      <workItem from="1701889159394" duration="3006000" />
+      <workItem from="1701960621987" duration="198000" />
+      <workItem from="1701960830376" duration="206000" />
     </task>
     <servers />
   </component>
