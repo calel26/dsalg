@@ -22,6 +22,7 @@ public class Board {
         return Arrays.equals(board[loc[1]][loc[0]], background);
     }
 
+    @SuppressWarnings("unchecked")
     public void tick(int down, int right, boolean controlledOnly, boolean rotate) {
         if(!active) return;
         var anythingMoved = false;
@@ -72,7 +73,6 @@ public class Board {
                     onScreen.removeLast();
                     onScreen.addLast(rotated);
                     brick = rotated;
-                    System.out.println("swapped");
                 }
             }
             var stuck = false;
@@ -123,12 +123,14 @@ public class Board {
         if(!controlledOnly && !anythingMoved && entryQueue.peek() != null) {
             var newBrick = entryQueue.peek();
             var a = newBrick.getArt();
+
+            check_loop:
             for(int r = 0; r < a.length; r++) {
                 for(int c = 0; c < a.length; c++) {
                     if(!isEmptyCell(new int[]{c + newBrick.getX(), r + newBrick.getY()})) {
                         active = false;
                         System.out.println("Board disabled!");
-                        break;
+                        break check_loop;
                     }
                 }
             }
@@ -148,9 +150,20 @@ public class Board {
                     addBoard();
                     nb = getNextBoard();
                 }
-                var b = onScreen.poll();
-                assert b != null;
-                nb.addBrick(b);
+                for(var b : (LinkedList<Brick>) onScreen.clone()) {
+                    var art = b.getArt();
+                    System.out.println("checking one");
+
+                    for(int r2d2 = 0; r2d2 < art.length; r2d2++) {
+                        if(r2d2 + b.getY() == r) {
+                            if(onScreen.remove(b)) {
+                                nb.addBrick(b);
+                                System.out.println("foudn it!");
+                                break;
+                            }
+                        }
+                    }
+                }
             }
         }
 
