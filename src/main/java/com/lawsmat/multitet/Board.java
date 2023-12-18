@@ -129,7 +129,6 @@ public class Board {
                 for(int c = 0; c < a.length; c++) {
                     if(!isEmptyCell(new int[]{c + newBrick.getX(), r + newBrick.getY()})) {
                         active = false;
-                        System.out.println("Board disabled!");
                         break check_loop;
                     }
                 }
@@ -152,13 +151,11 @@ public class Board {
                 }
                 for(var b : (LinkedList<Brick>) onScreen.clone()) {
                     var art = b.getArt();
-                    System.out.println("checking one");
 
                     for(int r2d2 = 0; r2d2 < art.length; r2d2++) {
                         if(r2d2 + b.getY() == r) {
                             if(onScreen.remove(b)) {
                                 nb.addBrick(b);
-                                System.out.println("foudn it!");
                                 break;
                             }
                         }

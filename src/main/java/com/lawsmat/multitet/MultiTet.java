@@ -22,6 +22,7 @@ public class MultiTet extends DoubleBufferedFrame {
     private boolean rotate = false;
     private boolean next = false;
     private int targetBoard = 0;
+    private boolean playing = false;
 
     private class Input implements KeyListener {
         @Override
@@ -82,6 +83,11 @@ public class MultiTet extends DoubleBufferedFrame {
         tick++;
         background.tick();
         background.draw(g);
+
+        if(!playing) {
+            if(next) playing = true;
+            return;
+        }
 
         Board drawing = game.getMainBoard();
         int i = 0;

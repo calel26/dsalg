@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a97f9774-49ac-4c3a-b4ae-509fb93d416d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/multitet/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/multitet/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lawsmat/multitet/MultiTet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lawsmat/multitet/MultiTet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +244,7 @@
       <workItem from="1701960621987" duration="198000" />
       <workItem from="1701960830376" duration="2240000" />
       <workItem from="1702388132649" duration="27201000" />
-      <workItem from="1702845307640" duration="10103000" />
+      <workItem from="1702845307640" duration="13376000" />
     </task>
     <servers />
   </component>
