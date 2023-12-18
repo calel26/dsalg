@@ -133,7 +133,7 @@ public class MultiTet extends DoubleBufferedFrame {
                 }
             }
             drawing = drawing.getNextBoard();
-            if(drawing != null && next && tick % 10 == 0 && targetBoard == i) {
+            if(drawing != null && next && tick % 10 == 0 && targetBoard == i && !wentToNextBoard) {
                 targetBoard++;
                 wentToNextBoard = true;
             }
